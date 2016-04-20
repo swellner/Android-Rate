@@ -1,6 +1,9 @@
 apply plugin: 'android-sdk-manager'
 apply plugin: 'com.android.library'
 
+group = "hotchemi.android.rate"
+version = "0.5.6-sw"
+
 android {
     compileSdkVersion 22
     buildToolsVersion '22.0.1'
@@ -10,4 +13,5 @@ android {
     }
 }
 
-apply from: 'https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle'
+//apply from: 'https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle'
+apply from: 'publish_maven.gradle'
